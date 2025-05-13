@@ -2,4 +2,4 @@
 
 About Me  
 
-<a href="https://amaliag0.github.io/enlinia.html">Website Contents</a>
+<a href="https://amaliag0.github.io/enlinia">Website Contents</a>
