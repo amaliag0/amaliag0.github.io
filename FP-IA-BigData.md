@@ -1,6 +1,6 @@
 layout: page
 title: "FP IA i Big Data"
-permalink: https://amaliag0.github.io/fp-ia-bigdata
+permalink: https://amaliag0.github.io/enlinia/fp-ia-bigdata
 
 # Unitat de Treball: Disseny d'un magatzem de dades (DWH)
 
