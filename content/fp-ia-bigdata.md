@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "FPS: Intel·ligència Artificial i Big Data"
 theme: jekyll-theme-minimal
 ---
