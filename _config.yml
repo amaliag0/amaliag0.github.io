@@ -13,12 +13,12 @@ description: Web personal d'Amàlia
 baseurl: "" 
 url: "" 
 defaults:
-  -
-    content:
-      path: "" # an empty string here means all files in the project
-      type: "page"
-    values:
-      layout: "default"
+   -
+      scope: 
+         path: "content" # an empty string here means all files in the project
+         type: "page"
+      values:
+         layout: "default"
 
 # Build settings
 theme: jekyll-theme-minimal
