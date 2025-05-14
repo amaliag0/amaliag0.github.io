@@ -57,14 +57,16 @@ theme: jekyll-theme-minimal
 
 <br>  
 
-> Continguts
-> 1. Introducció
-> 2. Context
-> 3. Elements curriculars
-> 4. Descripció
-> 5. Metodologia
-> 6. Planificació
-> 7. Avaluació
+```
+Continguts
+1. Introducció
+2. Context
+3. Elements curriculars
+4. Descripció
+5. Metodologia
+6. Planificació
+7. Avaluació
+```
 
 ## 1. Introducció
 L'objectiu d'aquest projecte és que l'alumnat dissenye un magatzem de dades que després implementarà de manera pràctica (en una altra fase del projecte). El magatzem de dades es dissenyarà en un context concret que s'acordarà amb el professorat a priori. En el disseny s'hauran d'incloure fonts d'informació diverses que s'integraran en el magatzem, mètodes d'integració, etapes de la integració i processament de dades en el magatzem, i almenys un disseny lògic de la integració d'un conjunt de dades que es relacionaran entre si amb un ús concret. 
