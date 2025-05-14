@@ -1,7 +1,5 @@
 # Unitat de Treball: Disseny d'un magatzem de dades (DWH)
 
-<!-- La Unidad de Trabajo (FP), debe incluir, como mínimo, la contextualización de los estudios, resultados de aprendizaje (RA), criterios de evaluación vinculados a los RA, metodología, instrumentos de evaluación y criterios de calificación. -->
-
 <table>
     <tr>
         <th>Títol</th>
@@ -15,7 +13,7 @@
         <th>Temporització</th>
         <td>X sessions</td>
     </tr>
-        <tr>
+    <tr>
         <th>Descripció</th>
         <td>La gestió de sistemes d'informació digital i de les dades que contenen és una habilitat fonamental en qualsevol àmbit en l'actualitat. Una aplicació habitual n'és la integració de dades de diferents fonts d'informació en un únic sistema de manera estructurada, segons un ús concret. L'objectiu d'aquest projecte és que l'alumnat s'introduïsca en aquest camp, dissenyant un magatzem de dades (DWH) que després implementarà de manera pràctica en una altra fase del projecte.</td>
     </tr>
@@ -31,7 +29,7 @@
             <li>el diagrama de l'extracció i integració de les dades
             <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit</td>
     </tr>
-        <tr>
+    <tr>
         <th>Resultats d'Aprenentatge</th>
         <td><b>RA1</b>. Aplica tècniques d'anàlisis de dades que integren, processen i analitzen la informació, adaptant i implementant sistemes que les utilitzen. <br> <b>RA3</b>. Gestiona i emmagatzema dades facilitant la recerca de respostes en conjunts grans de dades.</td>
     </tr>
@@ -45,9 +43,8 @@
     </tr>
 </table>
 
-<br>  
+<br>   
 
-```
 Continguts
 1. Introducció
 2. Context
@@ -56,15 +53,9 @@ Continguts
 5. Metodologia
 6. Planificació
 7. Avaluació
-```
 
 ## 1. Introducció
 L'objectiu d'aquest projecte és que l'alumnat dissenye un magatzem de dades que després implementarà de manera pràctica (en una altra fase del projecte). El magatzem de dades es dissenyarà en un context concret que s'acordarà amb el professorat a priori. En el disseny s'hauran d'incloure fonts d'informació diverses que s'integraran en el magatzem, mètodes d'integració, etapes de la integració i processament de dades en el magatzem, i almenys un disseny lògic de la integració d'un conjunt de dades que es relacionaran entre si amb un ús concret. 
-
-<!-- 
-També s'hauran d'incloure procediments de gestió de dades (gestió de la qualitat de les dades, gestió de Master Data, gestió de la protecció de dades...).
-Segons observe si amb açò el projecte es queda massa curt o massa llarg, es podria decidir ampliar-lo amb les següents fases més pràctiques.
--->
 
 ## 2. Context
 La Unitat de Treball "Disseny d'un magatzem de dades" s'emmarca en el mòdul "Sistemes de Big Data" dins el "Curs d'especialització de Formació Professional Superior d'Intel·ligència Artificial i Big Data". Aquesta UT es desenvolupa en el context educatiu particular definit a continuació.
