@@ -1,13 +1,3 @@
-<!-- title: "FP-IA-BigData" 
-permalink: https://amaliag0.github.io/content/fp-ia-bigdata 
-# Build settings 
-layout: page 
----
-title: "FPS: Intel·ligència Artificial i Big Data"
-theme: jekyll-theme-minimal
----
--->
-
 # Unitat de Treball: Disseny d'un magatzem de dades (DWH)
 
 <!-- La Unidad de Trabajo (FP), debe incluir, como mínimo, la contextualización de los estudios, resultados de aprendizaje (RA), criterios de evaluación vinculados a los RA, metodología, instrumentos de evaluación y criterios de calificación. -->
