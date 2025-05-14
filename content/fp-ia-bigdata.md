@@ -1,8 +1,11 @@
+---
 layout: page
+title: "FPS: Intel·ligència Artificial i Big Data"
+theme: jekyll-theme-minimal
+---
 <!-- title: "FP-IA-BigData" -->
 <!--  permalink: https://amaliag0.github.io/content/fp-ia-bigdata  -->
 <!-- # Build settings -->
-theme: jekyll-theme-minimal
 
 # Unitat de Treball: Disseny d'un magatzem de dades (DWH)
 
@@ -27,11 +30,15 @@ theme: jekyll-theme-minimal
     </tr>
     <tr>
         <th>Repte</th>
-        <td>L'entitat per a la qual treballes vol fer ús de dades que es generen en diferents aplicacions, per analitzar-les de manera conjunta i crear taulers de control amb mètriques i gràfics. Eres l'arquitecte/a de dades de l'entitat i has de dissenyar el DWH que integrarà les dades. El disseny s'ha d'adaptar a l'activitat de l'entitat i a l'ús concret que escollisques.</td>
+        <td>L'entitat per a la qual treballes vol fer ús de dades que es generen en diferents aplicacions, per analitzar-les de manera conjunta i crear taulers de control amb mètriques i gràfics. Eres l'arquitecte/a de dades de l'entitat i has de dissenyar el DWH que integrarà les dades. El disseny s'ha d'adaptar a l'activitat de l'entitat i a l'ús concret que es definisca al projecte, en l'acord amb la gestió de l'equip (professorat).</td>
     </tr>
     <tr>
         <th>Producte</th>
-        <td>Documentació descriptiva del DWH, incloent les tecnologies emprades, ferramentes d'integració de dades i almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret escollit.</td>
+        <td>Documentació del DWH, incloent:
+            <li>les tecnologies emprades en el DWH 
+            <li>les ferramentes d'integració de dades emprades
+            <li>el diagrama de l'extracció i integració de les dades
+            <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit</td>
     </tr>
         <tr>
         <th>Resultats d'Aprenentatge</th>
@@ -43,12 +50,7 @@ theme: jekyll-theme-minimal
     </tr>
     <tr>
         <th>Criteris d'Avaluació</th>
-        <td>RA1-b. S'han extret informació a partir de volums grans de dades. <br> RA1-c. S'han combinat diferents fonts i tipus de dades <br> RA1-d. S'ha construït un conjunt de dades complexes que s'han relacionat entre si. <br> RA1-e. S'han establert objectius i prioritats, s'ha organitzat i seqüenciat el temps de realització del projecte. <br> RA1-f. S'han seleccionat i integrat sistemes d'informació que cumplixen amb les necessitats del projecte. <br> RA1-g. S'han determinat els criteris de cost i qualitat necessaris per a la implementació eficaç i eficient del sistema de Big Data.<br> RA3-a Se han extraído y almacenado datos de diversas fuentes, para ser tratados en
-distintos escenarios. CA-b Se ha fijado el objetivo de extraer valor de los datos para lo que es necesario
-contar con tecnologías eficientes. CA-c Se ha comprobado que la revolución digital exige poder almacenar y procesar
-ingentes cantidades de datos de distinto tipo y descubrir su valor. CA-d Se han desarrollado sistemas de gestión, almacenamiento y procesamiento de
-grandes volúmenes de datos de manera eficiente y segura, teniendo en cuenta la
-normativa existente.</td>
+        <td>RA1-b. S'han extret informació a partir de volums grans de dades. <br> RA1-c. S'han combinat diferents fonts i tipus de dades <br> RA1-d. S'ha construït un conjunt de dades complexes que s'han relacionat entre si. <br> RA1-e. S'han establert objectius i prioritats, s'ha organitzat i seqüenciat el temps de realització del projecte. <br> RA1-f. S'han seleccionat i integrat sistemes d'informació que cumplixen amb les necessitats del projecte. <br> RA1-g. S'han determinat els criteris de cost i qualitat necessaris per a la implementació eficaç i eficient del sistema de Big Data.<br> RA3-a S'han extret i emmagatzemat dades de diverses fonts, per ser processats en diferents escenaris. <br> RA3-b S'ha definit l'objectiu per aprofitar les dades. <br> RA3-c S'ha comprovat que la revolució digital exigix poder emmagatzemar i processar grans volums de dades de diferent tipus, així com descobrir el seu valor. <br> RA3-d S'han desenvolupat sistemes de gestió, emmagatzematge i processament de grans volums de dades de manera eficient i segura, tenint en compte la normativa existent.</td>
     </tr>
 </table>
 
@@ -126,8 +128,12 @@ Les persones que obtenen el certificat de superació del curs poden exercir la s
 Mòdul Sistemes de Big Data (5074).  
 
 ### Resultats d'Aprenentatge
+<b>RA1</b>. Aplica tècniques d'anàlisis de dades que integren, processen i analitzen la informació, adaptant i implementant sistemes que les utilitzen. 
+<br> 
+<b>RA3</b>. Gestiona i emmagatzema dades facilitant la recerca de respostes en conjunts grans de dades.  
 
 ### Continguts
+Tècniques i procediments d'extracció i d'integració de dades (ETL, ELT). <br> Sistemes de gestió de emmagatzematge de dades. Ferramentes d'importació, integració i transformació de dades. <br> Programació. Modelat i arquitectura de dades. <br> Documentació tècnica.  
 
 ### Criteris d'Avaluació
 
@@ -139,6 +145,11 @@ Mòdul Sistemes de Big Data (5074).
 ### Desenvolupament 
 
 ### Entrega
+Documentació del DWH, incloent:
+    <li>les tecnologies emprades en el DWH 
+    <li>les ferramentes d'integració de dades emprades
+    <li>el diagrama de l'extracció i integració de les dades
+    <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit
 
 ### Recursos
 MS Visio
