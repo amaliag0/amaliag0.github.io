@@ -5,6 +5,7 @@ theme: jekyll-theme-minimal
 <!-- title: "FP-IA-BigData" -->
 <!--  permalink: https://amaliag0.github.io/content/fp-ia-bigdata  -->
 <!-- # Build settings -->
+<!-- layout: page -->
 
 # Unitat de Treball: Disseny d'un magatzem de dades (DWH)
 

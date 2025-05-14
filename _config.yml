@@ -12,13 +12,14 @@ description: Web personal d'Amàlia
    # https://raw.githubusercontent.com/amaliag0/amaliag0.github.io/master/images/profile.png
 baseurl: "" 
 url: "" 
-defaults:
-   -
-      scope: 
-         path: "content" # an empty string here means all files in the project
-         type: "page"
-      values:
-         layout: "default"
+
+# defaults:
+#    -
+#       scope: 
+#          path: "content" # an empty string here means all files in the project
+#          type: "page"
+#       values:
+#          layout: "default"
 
 # Build settings
 theme: jekyll-theme-minimal
