@@ -1,9 +1,11 @@
 # Welcome to Jekyll!
 
-title: Amàlia GF
-email: amgrefau@upv.es
+# title: Amàlia GF
+email: am.aliegf@gmail.com # amgrefau@upv.es
 description: > # this means to ignore newlines until "baseurl:"
-   <img src="https://raw.githubusercontent.com/amaliag0/amaliag0.github.io/master/images/profile.png" alt="MU"><br><br><br>
+   <img src="https://raw.githubusercontent.com/amaliag0/amaliag0.github.io/master/images/profile.png" 
+      alt="jo" style="width:5%;height:5%;">
+   <br><br><br>
    Website: <a href="https://amaliag0.github.io/">amaliag0.github.io</a>
 baseurl: "" 
 url: "" 
