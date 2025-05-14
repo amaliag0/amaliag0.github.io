@@ -24,10 +24,10 @@
     <tr>
         <th>Producte</th>
         <td>Documentació del DWH, incloent:
-            <li>les tecnologies emprades en el DWH 
-            <li>les ferramentes d'integració de dades emprades
-            <li>el diagrama de l'extracció i integració de les dades
-            <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit</td>
+            <li>les tecnologies emprades en el DWH </li>
+            <li>les ferramentes d'integració de dades emprades </li>
+            <li>el diagrama de l'extracció i integració de les dades </li>
+            <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit </li> </td>
     </tr>
     <tr>
         <th>Resultats d'Aprenentatge</th>
