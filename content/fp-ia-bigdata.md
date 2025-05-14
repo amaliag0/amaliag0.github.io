@@ -1,6 +1,8 @@
 layout: page
-title: "FP-IA-BigData"
-permalink: https://amaliag0.github.io/content/fp-ia-bigdata
+<!-- title: "FP-IA-BigData" -->
+<!--  permalink: https://amaliag0.github.io/content/fp-ia-bigdata  -->
+<!-- # Build settings -->
+theme: jekyll-theme-minimal
 
 # Unitat de Treball: Disseny d'un magatzem de dades (DWH)
 
@@ -52,17 +54,22 @@ normativa existente.</td>
 
 <br>  
 
-1. Introducció
-2. Context
-3. Elements curriculars
-4. Descripció
-5. Metodologia
-6. Planificació
-7. Avaluació
+> Continguts
+> 1. Introducció
+> 2. Context
+> 3. Elements curriculars
+> 4. Descripció
+> 5. Metodologia
+> 6. Planificació
+> 7. Avaluació
 
 ## 1. Introducció
-L'objectiu d'aquest projecte és que l'alumnat dissenye un magatzem de dades que després implementarà de manera pràctica (en una altra fase del projecte). El magatzem de dades es dissenyarà en un context concret que s'acordarà amb el professorat a priori. En el disseny s'hauran d'incloure fonts d'informació diverses que s'integraran, mètodes d'integració, etapes de la integració i processament de dades en el magatzem, i almenys un disseny lògic de la integració de les dades amb un ús concret. També s'hauran d'incloure procediments de gestió de dades (gestió de la qualitat de les dades, gestió de Master Data, gestió de la protecció de dades...).
+L'objectiu d'aquest projecte és que l'alumnat dissenye un magatzem de dades que després implementarà de manera pràctica (en una altra fase del projecte). El magatzem de dades es dissenyarà en un context concret que s'acordarà amb el professorat a priori. En el disseny s'hauran d'incloure fonts d'informació diverses que s'integraran en el magatzem, mètodes d'integració, etapes de la integració i processament de dades en el magatzem, i almenys un disseny lògic de la integració d'un conjunt de dades que es relacionaran entre si amb un ús concret. 
+
+<!-- 
+També s'hauran d'incloure procediments de gestió de dades (gestió de la qualitat de les dades, gestió de Master Data, gestió de la protecció de dades...).
 Segons observe si amb açò el projecte es queda massa curt o massa llarg, es podria decidir ampliar-lo amb les següents fases més pràctiques.
+-->
 
 ## 2. Context
 La Unitat de Treball "Disseny d'un magatzem de dades" s'emmarca en el mòdul "Sistemes de Big Data" dins el "Curs d'especialització de Formació Professional Superior d'Intel·ligència Artificial i Big Data". Aquesta UT es desenvolupa en el context educatiu particular definit a continuació.
@@ -81,16 +88,13 @@ El centre impartix els estudis corresponents a l'Educació Secundària Obligatò
 
 Pel que respecta a les ensenyances de Formació Professional, el centre impartix 5 cicles formatius de les família Informàtica i Comunicacions i 2 cursos
 d’especialització:
-• Cicle Formatiu de Grau Bàsic Informàtica d’Oficina
-• Cicle formatiu de Grau Mitjà Sistemes Microinformàtics i xarxes
-• Cicle Formatiu de Grau Superior Administració de Sistemes Informàtics en
-Xarxa
-• Cicle Formatiu de Grau Superior Desenvolupament d’Aplicacions
-Multiplataforma
-• Cicle Formatiu de Grau Superior Desenvolupament d’Aplicacions Web
-• **Curs d’especialització en Inteligència Artificial i Big Data**
-• Curs d’especialització en Ciberseguretat en Entorns de les Tecnologies de
-la Informació
+- Cicle Formatiu de Grau Bàsic Informàtica d’Oficina
+- Cicle formatiu de Grau Mitjà Sistemes Microinformàtics i xarxes
+- Cicle Formatiu de Grau Superior Administració de Sistemes Informàtics en Xarxa
+- Cicle Formatiu de Grau Superior Desenvolupament d’Aplicacions Multiplataforma
+- Cicle Formatiu de Grau Superior Desenvolupament d’Aplicacions Web
+- **Curs d’especialització en Inteligència Artificial i Big Data**
+- Curs d’especialització en Ciberseguretat en Entorns de les Tecnologies de la Informació
 
 Per altra banda, de la familia professional Agrària també s’impartixen 2 cicles formatius.
 
