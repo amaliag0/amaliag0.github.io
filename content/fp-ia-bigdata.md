@@ -46,7 +46,7 @@ description: "Unitat de Treball"
 
 <table>
     <tr>
-        <th rowspan="7">Resultats d'Aprenentatge</th>
+        <th rowspan="10">Resultats d'Aprenentatge</th>
         <td rowspan="6"><b>RA1</b>. Aplica tècniques d'anàlisis de dades que integren, processen i analitzen la informació, adaptant i implementant sistemes que les utilitzen.
         </td>
         <td>
@@ -79,8 +79,26 @@ description: "Unitat de Treball"
         </td>
     </tr>
     <tr>
-        <td>
+        <td  rowspan="4">
         <b>RA3</b>. Gestiona i emmagatzema dades facilitant la recerca de respostes en conjunts grans de dades.
+        </td>
+        <td>
+        a. S'han extret i emmagatzemat dades de diverses fonts, per ser processats en diferents escenaris.
+        </td>
+    </tr>
+    <tr>
+        <td>
+        b. S'ha definit l'objectiu per aprofitar les dades.
+        </td>
+    </tr>
+    <tr>
+        <td>
+        c. S'ha comprovat que la revolució digital exigix poder emmagatzemar i processar grans volums de dades de diferent tipus, així com descobrir el seu valor.
+        </td>
+    </tr>
+    <tr>
+        <td>
+        d. S'han desenvolupat sistemes de gestió, emmagatzematge i processament de grans volums de dades de manera eficient i segura, tenint en compte la normativa existent.
         </td>
     </tr>
     <tr>
@@ -175,11 +193,11 @@ Tècniques i procediments d'extracció i d'integració de dades (ETL, ELT). <br>
 ### Desenvolupament 
 
 ### Entrega
-Documentació del DWH, incloent:
-    <li>les tecnologies emprades en el DWH 
-    <li>les ferramentes d'integració de dades emprades
-    <li>el diagrama de l'extracció i integració de les dades
-    <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit
+Disseny documentat del DWH en un fitxer (PDF o altre format adient), incloent:
+    <li>les tecnologies emprades en el DWH </li>
+    <li>les ferramentes d'integració de dades emprades </li>
+    <li>el diagrama de l'extracció i integració de les dades </li>
+    <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit </li>
 
 ### Recursos
 MS Visio
