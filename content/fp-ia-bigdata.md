@@ -1,5 +1,6 @@
 ---
-title: "Unitat de Treball: Disseny d'un magatzem de dades (DWH)"
+title: "Disseny d'un magatzem de dades (DWH)"
+description: "Unitat de Treball"
 ---
 [Tornar a l'inici](../index.html)
 
@@ -13,36 +14,78 @@ title: "Unitat de Treball: Disseny d'un magatzem de dades (DWH)"
         <td>Curs d'especialització FPS d'IA i Big Data > Sistemes de Big Data (5074)</td>
     </tr>
     <tr>
-        <th>Temporització</th>
+        <th>Duració</th>
         <td>X sessions</td>
     </tr>
     <tr>
-        <th>Descripció</th>
-        <td>La gestió de sistemes d'informació digital i de les dades que contenen és una habilitat fonamental en qualsevol àmbit en l'actualitat. Una aplicació habitual n'és la integració de dades de diferents fonts d'informació en un únic sistema de manera estructurada, segons un ús concret. L'objectiu d'aquest projecte és que l'alumnat s'introduïsca en aquest camp, dissenyant un magatzem de dades (DWH) que després implementarà de manera pràctica en una altra fase del projecte.</td>
+        <th>Antecedents i objectiu</th>
+        <td>La gestió correcta i eficient de sistemes d'informació digital i de les dades que contenen és un procediment fonamental en qualsevol àmbit en l'actualitat. Una aplicació habitual n'és la integració estructurada de dades de diferents fonts d'informació en un únic sistema, amb un ús o fi concret. <br> L'<b>objectiu</b> d'aquest projecte és que l'alumnat s'introduïsca en aquest camp des de la perspectiva d'un/a arquitecte/a de dades, dissenyant un magatzem de dades (DWH) que després implementarà de manera pràctica en una altra fase del projecte. Amb açò es pretén que l'alumnat:
+        <li>aprenga a entendre les necessitats d'una entitat/client respecte a l'ús de les dades que genera la seua activitat</li>
+        <li>guanye habilitats per entendre la realitat tecnològica i estructural dels sistemes d'informació de l'entitat/client i les relacions i fluxes entre ells</li>
+        <li>conega tecnologies, ferramentes i terminologia dels àmbits de l'arquitectura, el modelat i l'enginyeria de dades</li>
+        <li>aprenga a dissenyar models de dades de manera crítica, segons usos concretos</li>
+        <li>aprenga bones pràctiques dels àmbits de l'arquitectura i el modelat de dades</li>
+        <li>desenvolupe habilitats de comunicació, tant oral com escrita, de cara a l'entitat/client i per crear documentació</li>
+        </td>
     </tr>
     <tr>
         <th>Repte</th>
-        <td>L'entitat per a la qual treballes vol fer ús de dades que es generen en diferents aplicacions, per analitzar-les de manera conjunta i crear taulers de control amb mètriques i gràfics. Eres l'arquitecte/a de dades de l'entitat i has de dissenyar el DWH que integrarà les dades. El disseny s'ha d'adaptar a l'activitat de l'entitat i a l'ús concret que es definisca al projecte, en l'acord amb la gestió de l'equip (professorat).</td>
+        <td>L'entitat per a la qual treballes vol fer ús de dades que es generen en diferents aplicacions, per analitzar-les de manera conjunta i crear taulers de control amb mètriques i gràfics. Eres l'arquitecte/a de dades de l'entitat i has de dissenyar el DWH que integrarà les dades. En primer lloc, hauràs de rebre instruccions del gestor de l'equip (professorat) sobre l'objectiu de l'entitat/client, i arran d'això, hauràs d'investigar quines fonts d'informació hi ha, quines dades s'hi generen, quines tecnologies s'usen, i decidir quina és la millor solució tècnica per al problema plantejat.</td>
     </tr>
     <tr>
         <th>Producte</th>
-        <td>Documentació del DWH, incloent:
+        <td>Disseny documentat del DWH en un fitxer (PDF o altre format adient), incloent:
             <li>les tecnologies emprades en el DWH </li>
             <li>les ferramentes d'integració de dades emprades </li>
             <li>el diagrama de l'extracció i integració de les dades </li>
             <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit </li> </td>
     </tr>
+</table>
+
+<br>
+
+<table>
     <tr>
-        <th>Resultats d'Aprenentatge</th>
-        <td><b>RA1</b>. Aplica tècniques d'anàlisis de dades que integren, processen i analitzen la informació, adaptant i implementant sistemes que les utilitzen. <br> <b>RA3</b>. Gestiona i emmagatzema dades facilitant la recerca de respostes en conjunts grans de dades.</td>
+        <th rowspan="7">Resultats d'Aprenentatge</th>
+        <td rowspan="6"><b>RA1</b>. Aplica tècniques d'anàlisis de dades que integren, processen i analitzen la informació, adaptant i implementant sistemes que les utilitzen.
+        </td>
+        <td>
+        b. S'ha extret informació a partir de volums grans de dades.
+        </td>
+    </tr>
+    <tr>
+        <td>
+        c. S'han combinat diferents fonts i tipus de dades.
+        </td>
+    </tr>
+        <tr>
+        <td>
+        d. S'ha construït un conjunt de dades complexes que s'han relacionat entre si.
+        </td>
+    </tr>
+        <tr>
+        <td>
+        e. S'han establert objectius i prioritats, s'ha organitzat i seqüenciat el temps de realització del projecte.
+        </td>
+    </tr>
+        <tr>
+        <td>
+        f. S'han seleccionat i integrat sistemes d'informació que cumplixen amb les necessitats del projecte.
+        </td>
+    </tr>
+        <tr>
+        <td>
+        g. S'han determinat els criteris de cost i qualitat necessaris per a la implementació eficaç i eficient del sistema de Big Data.
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <b>RA3</b>. Gestiona i emmagatzema dades facilitant la recerca de respostes en conjunts grans de dades.
+        </td>
     </tr>
     <tr>
         <th>Continguts</th>
         <td>Tècniques i procediments d'extracció i d'integració de dades (ETL, ELT). <br> Sistemes de gestió de emmagatzematge de dades. Ferramentes d'importació, integració i transformació de dades. <br> Programació. Modelat i arquitectura de dades. <br> Documentació tècnica. </td>
-    </tr>
-    <tr>
-        <th>Criteris d'Avaluació</th>
-        <td>RA1-b. S'han extret informació a partir de volums grans de dades. <br> RA1-c. S'han combinat diferents fonts i tipus de dades <br> RA1-d. S'ha construït un conjunt de dades complexes que s'han relacionat entre si. <br> RA1-e. S'han establert objectius i prioritats, s'ha organitzat i seqüenciat el temps de realització del projecte. <br> RA1-f. S'han seleccionat i integrat sistemes d'informació que cumplixen amb les necessitats del projecte. <br> RA1-g. S'han determinat els criteris de cost i qualitat necessaris per a la implementació eficaç i eficient del sistema de Big Data.<br> RA3-a S'han extret i emmagatzemat dades de diverses fonts, per ser processats en diferents escenaris. <br> RA3-b S'ha definit l'objectiu per aprofitar les dades. <br> RA3-c S'ha comprovat que la revolució digital exigix poder emmagatzemar i processar grans volums de dades de diferent tipus, així com descobrir el seu valor. <br> RA3-d S'han desenvolupat sistemes de gestió, emmagatzematge i processament de grans volums de dades de manera eficient i segura, tenint en compte la normativa existent.</td>
     </tr>
 </table>
 
