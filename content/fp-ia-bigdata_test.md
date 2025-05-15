@@ -112,11 +112,11 @@ Tècniques i procediments d'extracció i d'integració de dades (ETL, ELT). <br>
 ### Desenvolupament 
 
 ### Entrega
-Documentació del DWH, incloent:
-    <li>les tecnologies emprades en el DWH 
-    <li>les ferramentes d'integració de dades emprades
-    <li>el diagrama de l'extracció i integració de les dades
-    <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit
+Disseny documentat del DWH en un fitxer (PDF o altre format adient), incloent:  
+    <li>les tecnologies emprades en el DWH </li>
+    <li>les ferramentes d'integració de dades emprades </li>
+    <li>el diagrama de l'extracció i integració de les dades </li>
+    <li>almenys un disseny lògic d'un model de dades que siga coherent amb l'activitat de l'entitat i l'ús concret definit </li>
 
 ### Recursos
 MS Visio
@@ -130,4 +130,3 @@ MS Visio
 L'entrega seria en un format de documentació, no definida de moment.
 
 ### Mètodes d'avaluació
-
