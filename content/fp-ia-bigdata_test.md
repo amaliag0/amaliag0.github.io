@@ -1,9 +1,28 @@
 # Unitat de Treball: Disseny d'un magatzem de dades (DWH)
 
+<style>
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+
 <table>
     <tr>
-        <th>Títol</th>
+        <th rowspan="2">Títol</th>
         <td>Disseny d'un magatzem de dades (DWH)</td>
+    </tr>
+    <tr>
+        <td>Disseny d'un magatzem de dades (DWH)</td>
+    </tr>
+        <tr>
+        <th>Criteris d'Avaluació</th>
+        <td>RA1-b. S'ha extret informació a partir de volums grans de dades. <br> RA1-c. S'han combinat diferents fonts i tipus de dades. <br> RA1-d. S'ha construït un conjunt de dades complexes que s'han relacionat entre si. <br> RA1-e. S'han establert objectius i prioritats, s'ha organitzat i seqüenciat el temps de realització del projecte. <br> RA1-f. S'han seleccionat i integrat sistemes d'informació que cumplixen amb les necessitats del projecte. <br> RA1-g. S'han determinat els criteris de cost i qualitat necessaris per a la implementació eficaç i eficient del sistema de Big Data.<br> RA3-a S'han extret i emmagatzemat dades de diverses fonts, per ser processats en diferents escenaris. <br> RA3-b S'ha definit l'objectiu per aprofitar les dades. <br> RA3-c S'ha comprovat que la revolució digital exigix poder emmagatzemar i processar grans volums de dades de diferent tipus, així com descobrir el seu valor. <br> RA3-d S'han desenvolupat sistemes de gestió, emmagatzematge i processament de grans volums de dades de manera eficient i segura, tenint en compte la normativa existent.</td>
     </tr>
 </table>
 
