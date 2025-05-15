@@ -1,4 +1,7 @@
-# Unitat de Treball: Disseny d'un magatzem de dades (DWH)
+---
+title: "Unitat de Treball: Disseny d'un magatzem de dades (DWH)"
+---
+[Tornar a l'inici](../index.html)
 
 <table>
     <tr>
