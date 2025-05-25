@@ -2,7 +2,7 @@
 title: "Disseny d'un magatzem de dades (DWH)"
 description: "Unitat de Treball"
 ---
-[Tornar a l'inici](../index.html)
+[Tornar a l'inici](../../../index.html)
 
 <table>
     <tr>
