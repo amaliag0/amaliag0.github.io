@@ -17,7 +17,7 @@ Mòdul Hacking ètic (5025)
 #### FP Superior: Curs d'especialització en Intel·ligència Artificial i Big Data  
 
 Mòdul Sistemes de Big Data (5074)  
-&#8594; [Unitat de Treball: Disseny d'un magatzem de dades (DWH)](pages/dwh_01/fp-ia-bigdata.html)  
+&#8594; [Unitat de Treball: Disseny d'un magatzem de dades (DWH)](pages/dwh_01)  
 &#8594; [Projecte de curs: Implementació d'un magatzem de dades (DWH) per al seu aprofitament en un projecte d'intel·ligència de negoci (BI)](pages/dwh_02/)
 
 ---
