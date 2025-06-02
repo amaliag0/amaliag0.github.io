@@ -18,7 +18,7 @@ Mòdul Hacking ètic (5025)
 
 Mòdul Sistemes de Big Data (5074)  
 &#8594; [Unitat de Treball: Disseny d'un magatzem de dades (DWH)](pages/dwh_01)  
-&#8594; [Projecte de curs: Implementació d'un magatzem de dades (DWH) per al seu aprofitament en un projecte d'intel·ligència de negoci (BI)](pages/dwh_02/)
+&#8594; [Projecte de curs: Implementació d'un magatzem de dades (DWH) per al seu aprofitament en la intel·ligència de negoci (BI)](pages/dwh_02/)
 
 ---
 Perfil a GitHub: [https://amaliag0.github.io](https://amaliag0.github.io)
