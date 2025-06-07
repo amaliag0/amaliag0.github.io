@@ -6,8 +6,8 @@ description: "Projecte principal de mòdul"
 [Tornar a l'inici](../../../index.html)  
 
 > **Enllaços útils**  
-> &#8594; [Recursos professorat](./fp-ia-bigdata.html)  
-> &#8594; [Recursos alumnat](./fp-ia-bigdata.html)  
+> &#8594; [Recursos professorat](./profesorado/index.html)  
+> &#8594; [Recursos alumnat](./alumnado/index.html)  
 
 
 ## 1.	Introducció  
