@@ -9,7 +9,7 @@
 
 ## 1. Magatzem de dades
 
-Un **magatzem de dades** (_data warehouse_) és una base de dades orientada que integra múltiples fonts, orientada a la consulta i l’anàlisi, i dissenyada per donar suport a la presa de decisions estratègiques. A diferència de les bases de dades transaccionals (_OnLine Transaction Processing_, OLTP), els magatzems de dades (_On-Line Analytical Processing_, OLAP) estan optimitzats per a consultes complexes i agregacions de dades.
+Un **magatzem de dades** (_data warehouse_) és una base de dades que integra múltiples fonts, orientada a la consulta i l’anàlisi, i dissenyada per donar suport a la presa de decisions estratègiques. A diferència de les bases de dades transaccionals (_OnLine Transaction Processing_, OLTP), els magatzems de dades (_On-Line Analytical Processing_, OLAP) estan optimitzats per a consultes complexes i agregacions de dades.
 
 Els magatzems de dades cumplixen les següents propietats:
 - **Integrat**: dades procedents de múltiples fonts es combinen en un format coherent.
@@ -18,7 +18,9 @@ Els magatzems de dades cumplixen les següents propietats:
 - **Variant en el temps**: cada registre reflectix un moment temporal concret.
 
 > Exemple: 
-Un forn de venda de pa i dolços pot tindre un magatzem de dades amb informació històrica de comandes, clients, productes i visites web, per analitzar tendències de compra o rendiment de campanyes.
+Un forn de venda de pa i dolços pot tindre un magatzem de dades amb informació històrica de comandes, clients, productes i visites web, per analitzar tendències de compra o rendiment de campanyes.  
+
+> Per recordar les diferències entre OLTP i OLAP, l'article d'AWS: ["What’s the Difference Between OLAP and OLTP?"](https://aws.amazon.com/compare/the-difference-between-olap-and-oltp/)
 
 ---
 
@@ -50,7 +52,7 @@ Existixen diferents tipus de taules de fets:
 <br>
 
 > Exemple:
-> Taula transaccional `fets_vendes`
+> Taula transaccional `fact_vendes`
 > | id_venda | id_producte | id_client | id_temps | quantitat | import_total |
 > |----------|-------------|-----------|----------|-----------|---------------|
 > | 1        | 101         | 2001      | 20250101 | 3         | 45.00         |
@@ -111,18 +113,20 @@ Per contra, no és recomanable quan:
 - Les dimensions canvien a sovint, ja que aquest esquema dificulta el seu manteniment.
 - Es requerix un emmagatzematge eficient, sobretot quan es tracta de grans volums de dades.
 
+> Exemple
 ```
             dim_client
                 |
-dim_temps — fets_vendes — dim_producte
+dim_temps — fact_vendes — dim_producte
                 |
             dim_empleat
 ```
 
+> Exemple
 ```mermaid
 graph TD
     A["`dim_client`"]
-    A --- B["`fets_vendes`"]
+    A --- B["`fact_vendes`"]
     B --- C["`dim_empleat`"]
     D["`dim_temps`"]
     D --- B
@@ -149,6 +153,21 @@ Per contra, no és recomanable quan:
 
 **Exemple:**
 `dim_producte` → `dim_subcategoria` → `dim_categoria`
+```mermaid
+graph TD
+    A["`dim_client`"]
+    A --- B["`fact_vendes`"]
+    B --- C["`dim_empleat`"]
+    D["`dim_temps`"]
+    D --- B
+    E["`dim_producte`"]
+    B --- E
+    E --- F["`dim_subcategoria`"]
+    F --- G["`dim_categoria`"]
+    C --- H["`dim_departament`"]
+    A --- I["`dim_regio`"]
+    I --- J["`dim_pais`"]
+```
 
 ### Comparativa entre els esquemes _star_ i _snowflake_
 
@@ -163,7 +182,7 @@ Per contra, no és recomanable quan:
 | **Exemple típic** | `dim_producte` conté `nom`, `subcategoria`, `categoria`. | `dim_producte` → `dim_subcategoria` → `dim_categoria`. |
 | **Casos d’ús recomanats** | Entorns on la simplicitat i la velocitat de consulta són prioritàries (BI, _dashboards_). | Entorns amb grans volums de dades i necessitat de manteniment estructurat. També si el control d'accés ha de ser molt granular i exhaustiu. |
 
-> Per ampliar coneixements sobre les diferències entre els esquemes _star_ i _snowflake_: Article a DataCamp ["Star Schema vs Snowflake Schema"](https://www.datacamp.com/blog/star-schema-vs-snowflake-schema)
+> Per ampliar coneixements sobre les diferències entre els esquemes _star_ i _snowflake_: article a DataCamp ["Star Schema vs Snowflake Schema"](https://www.datacamp.com/blog/star-schema-vs-snowflake-schema)
 
 ---
 
@@ -216,7 +235,7 @@ Tenint en compte:
 
 Exemple:
 ```sql
-CREATE TABLE fets_vendes (
+CREATE TABLE fact_vendes (
   id SERIAL PRIMARY KEY,
   id_producte INT,
   id_client INT,
@@ -296,6 +315,7 @@ Per a això, es poden seguir els següents mètodes:
 ---
 
 ## 5. Bones pràctiques
+<mark>REVISAR</mark>
 
 ### Normalització vs. desnormalització
 - **Desnormalització**: preferida en magatzems de dades per millorar la velocitat de consulta.
@@ -316,7 +336,7 @@ Per a això, es poden seguir els següents mètodes:
 ```sql
 CREATE MATERIALIZED VIEW vendes_per_categoria AS
 SELECT p.categoria, SUM(f.import_total)
-FROM fets_vendes f
+FROM fact_vendes f
 JOIN dim_producte p ON f.id_producte = p.id_producte
 GROUP BY p.categoria;
 ```

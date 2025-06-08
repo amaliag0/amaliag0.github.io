@@ -1,0 +1,31 @@
+id,name,default_code,list_price,categ_id
+1,Pan de barra,P0001,7.51,1
+2,Pan integral,P0002,3.14,1
+3,Pan de centeno,P0003,4.55,1
+4,Baguette,P0004,7.88,1
+5,Pan de molde,P0005,10.08,1
+6,Croissant,P0006,3.78,1
+7,Napolitana de chocolate,P0007,7.08,1
+8,Ensaimada,P0008,5.06,1
+9,Donut,P0009,5.34,1
+10,Palmera,P0010,6.12,1
+11,Magdalena,P0011,8.38,1
+12,Muffin de arándanos,P0012,4.57,1
+13,Tarta de manzana,P0013,11.2,1
+14,Tarta de queso,P0014,1.28,1
+15,Pastel de chocolate,P0015,10.98,1
+16,Coca de llanda,P0016,11.28,1
+17,Empanadilla,P0017,4.34,1
+18,Rosquilla,P0018,9.22,1
+19,Hojaldre,P0019,1.01,1
+20,Churro,P0020,2.94,1
+21,Bizcocho,P0021,10.65,1
+22,Pan de semillas,P0022,3.02,1
+23,Pan gallego,P0023,8.73,1
+24,Focaccia,P0024,0.82,1
+25,Pão de queijo,P0025,10.34,1
+26,Bollito suizo,P0026,4.47,1
+27,Tarta Sacher,P0027,2.28,1
+28,Panecillo,P0028,9.58,1
+29,Brioche,P0029,1.78,1
+30,Pan sin gluten,P0030,1.64,1
