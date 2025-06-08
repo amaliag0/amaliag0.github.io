@@ -46,11 +46,10 @@ https://aitor-medrano.github.io/iabd/de/de.html#ingesta
 Un sistema d'aprofitament de dades complet inclou els següents blocs:
 
 1. **Ingesta de dades**: Captura des de múltiples fonts (APIs, arxius, bases de dades, sensors...). <mark>_Aquestes destreses es treballaran en la Unitat de Treball 1_</mark>.
-2. **Prepocessament**: Revisió, neteja i validació de les dades. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 1 i 2_</mark>.
-3. **Emmagatzematge**: Integració de les dades en bases de dades relacionals o altres sistemes, creant Magatzems de dades (_Data Warehouse_) o Llacs de dades (_Data Lake_). <mark>_Aquestes destreses es treballaran en la Unitat de Treball 3_</mark>.
-4. **Modelat**: Creació de models de dades que les integren, agrupen i relacionen, en formats diferents en funció de l'objectiu analític i/o de visualització (OLAP, esquema estrella...).  <mark>_Aquestes destreses es treballaran en la Unitat de Treball 3_</mark>.
-5. **Analítica**: Ampliació del model amb dades derivades, en preparació de les representacions gràfiques o del càlcul d'indicadors de progrés. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 4_</mark>.
-6. **Visualització**: Quadres de comandament (_dashboards_), informes d'intel·ligència de negoci (BI) i alertes que permeten visualitzar, interpretar i monitoritzar les dades i els indicadors definits. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 5_</mark>.
+2. **Prepocessament**: Revisió, neteja i validació de les dades. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 2_</mark>.
+3. **Emmagatzematge i Modelatge**: Integració de les dades en bases de dades relacionals o altres sistemes, creant Magatzems de dades (_Data Warehouse_). Creació de models de dades que les integren, agrupen i relacionen, en formats diferents en funció de l'objectiu analític i/o de visualització. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 3_</mark>.
+4. **Analítica**: Ampliació del model amb dades derivades, en preparació de les representacions gràfiques o del càlcul d'indicadors de progrés. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 4_</mark>.
+5. **Visualització**: Quadres de comandament (_dashboards_), informes d'intel·ligència de negoci (BI) i alertes que permeten visualitzar, interpretar i monitoritzar les dades i els indicadors definits. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 5_</mark>.
 
 Aquestes fases es connecten entre si formant un **flux de dades** que va des de les fonts fins a la presa de decisions, una vegada s'han interpretat les dades. Tots aquestos conceptes s'estudiaran amb profunditat en les Unitats de Treball referides.  
 
@@ -72,14 +71,12 @@ flowchart LR
     end
 
     subgraph "`Càrrega (L)`"
-        C --> D["`(3) Emmagatzematge de dades`"]
+        C --> D["`(3) Emmagatzematge i modelatge de dades`"]
     end
 
-    D --> E["`(4) Modelat de dades`"]  
-
-    E --> F["`(5) Analítica de dades`"]
+    D --> E["`(5) Analítica de dades`"]
     
-    F --> G["`(6) Visualització de dades`"]
+    E --> F["`(6) Visualització de dades`"]
 
     style A1 fill:#FFD1DC,stroke:#000,stroke-width:1px
     style A2 fill:#FFD1DC,stroke:#333,stroke-width:1px
@@ -89,7 +86,6 @@ flowchart LR
     style D fill:#F1FAEE,stroke:#333,stroke-width:1px
     style E fill:#D8F3DC,stroke:#333,stroke-width:1px
     style F fill:#ffb,stroke:#fff,stroke-width:1px
-    style G fill:#ffb,stroke:#fff,stroke-width:1px
 
 ```
 
