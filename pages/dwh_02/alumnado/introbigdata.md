@@ -28,36 +28,20 @@ Per exemple, per a...
 
 És a dir, que saber fer ús de les dades que es generen en una activitat (comercial o no) és una competència essencial en qualsevol àmbit professional en l'actualitat, tenint en compte que tota activitat genera dades i que la gran majoria d'aquestes dades són digitals o poden digitalitzar-se.
 
----
-
-## 2. Arquitectures _Big Data_
-
-<mark> REVISAR</mark>
-
-Per gestionar _Big Data_ s’utilitzen arquitectures específiques que permeten escalar el processament i adaptar-se a diferents tipus de dades i necessitats.
-
-### Arquitectura Lambda
-
-- Combina dues capes:
-  - **Batch layer**: Processa grans volums de dades històriques.
-  - **Speed layer**: Processa dades en temps real.
-- És robusta i flexible, però complexa de mantindre.
-
-### Arquitectura Kappa
-
-- Només té una capa de processament en temps real.
-- És més senzilla i adequada quan no es necessita anàlisi històrica.
-- Ideal per a fluxos continus de dades, com sensors o xarxes socials.
-
-Ambdues arquitectures es basen en el principi de **processament distribuït**, és a dir, dividir el treball entre múltiples nodes o servidors.  
-
-<mark>[!]</mark> Aquestos conceptes no es treballaran en el projecte principal del mòdul.
-
 > Per ampliar coneixements sobre problemàtiques encara actuals respecte a ferramentes i plataformes de gestió de dades: ["The Problem is Medium Data"](https://highscalability.com/the-big-problem-is-medium-data/)
 
 ---
 
-## 3. Components d’un sistema d'aprofitament dades
+## 2. Cicle de vida de les dades
+Data lifecycle
+
+https://aitor-medrano.github.io/iabd/de/de.html#ciclo-de-vida
+
+https://aitor-medrano.github.io/iabd/de/de.html#ingesta
+
+---
+
+## 3. Fases d’un sistema d'aprofitament dades
 
 Un sistema d'aprofitament de dades complet inclou els següents blocs:
 
@@ -68,7 +52,7 @@ Un sistema d'aprofitament de dades complet inclou els següents blocs:
 5. **Analítica**: Ampliació del model amb dades derivades, en preparació de les representacions gràfiques o del càlcul d'indicadors de progrés. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 4_</mark>.
 6. **Visualització**: Quadres de comandament (_dashboards_), informes d'intel·ligència de negoci (BI) i alertes que permeten visualitzar, interpretar i monitoritzar les dades i els indicadors definits. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 5_</mark>.
 
-Aquests components es connecten entre si formant un **flux de dades** que va des de les fonts fins a la presa de decisions, una vegada s'han interpretat les dades. Tots aquestos conceptes s'estudiaran amb profunditat en les Unitats de Treball referides.  
+Aquestes fases es connecten entre si formant un **flux de dades** que va des de les fonts fins a la presa de decisions, una vegada s'han interpretat les dades. Tots aquestos conceptes s'estudiaran amb profunditat en les Unitats de Treball referides.  
 
 <mark> REVISAR ESTIL</mark>
 
@@ -110,7 +94,18 @@ flowchart LR
 ```
 
 ---
-## 4. Rols associats al món professional 
+## 4. Sistemes d'emmagatzematge
+
+Data warehouse, Data lake
+https://aitor-medrano.github.io/iabd/de/de.html#almacenamiento
+
+---
+
+## 5. Gestió de dades i Governança de dades
+https://aitor-medrano.github.io/iabd/de/de.html#areas-transversales
+
+---
+## 6. Rols associats al món professional 
 
 <mark>Intro + relació amb projecte</mark>
 
@@ -125,9 +120,21 @@ flowchart LR
 #### Intel·ligència de Negoci (BI)
 
 #### Gestió de Dades i Governança de Dades
+## 🧠 3. Data Management: gestió eficient del cicle de vida del dada
+
+La **gestió de dades** implica controlar tot el cicle de vida del dada: des de la seua creació fins a la seua eliminació.
+
+### Bones pràctiques:
+
+- Documentar l’origen i les transformacions aplicades (metadades).
+- Controlar versions dels conjunts de dades.
+- Establir polítiques de retenció i arxiu.
+- Automatitzar processos de validació i control de qualitat.
+
+> 📁 Exemple: mantenir un registre de quan i com s’ha modificat un camp de “categoria de producte”.
 
 #### Altres
-CPO
-
+DPO
 
 ---
+https://aitor-medrano.github.io/iabd/de/de.html#herramientas-base
