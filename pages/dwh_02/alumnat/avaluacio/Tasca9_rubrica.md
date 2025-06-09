@@ -1,0 +1,1 @@
+Rubrica Tasca8
