@@ -1,54 +1,18 @@
 import pandas as pd
-import mysql.connector
-import requests
-from sqlalchemy import create_engine
 import xmlrpc.client
 
+# Utilitza pandas i el métode read_csv
 def extraer_csv(ruta):
 
-    print("Leyendo CSV...")
-    return pd.read_csv(ruta)
 
+# Utilitza sqlalchemy per llegir una taula de la base de dades
 def extraer_mysql(tabla):
 
-    print(f"Conectando a MySQL y leyendo la tabla '{tabla}'...")
-    usuario = "root"
-    contraseña = "root"
-    host = "mysql"
-    base_de_datos = "empresa"
 
-    url = f"mysql+mysqlconnector://{usuario}:{contraseña}@{host}/{base_de_datos}"
-    engine = create_engine(url)
-
-    query = f"SELECT * FROM {tabla};"
-    return pd.read_sql(query, con=engine)
-
-def extraer_odoo_vieja(modelo):
-
-    print("Conectando a Odoo API...")
-
-    url = "http://odoo:8069"
-    db = "odoo"
-    username = "jmorantllorca@gmail.com"
-    password = "c0719f658ed9a30a79e70e7ddac0dbf8aa01819d"
-
-    common = xmlrpc.client.ServerProxy(f'{url}/xmlrpc/2/common')
-    uid = common.authenticate(db, username, password, {})
-    models = xmlrpc.client.ServerProxy(f'{url}/xmlrpc/2/object')
-
-    results = models.execute_kw(
-        db, uid, password,
-        'res.partner', 'search_read',
-        [[]],
-        {'fields': ['name', 'email'], 'limit': 10}
-    )
-    return pd.DataFrame(results)
-
+# Extrae datos de Odoo a través de XML-RPC.
 def extraer_odoo(modelo, campos=None, filtro=None, limite=0):
     
     """
-    Extrae datos de Odoo a través de XML-RPC.
-
     Args:
         modelo (str): Nombre del modelo de Odoo (ej. 'res.users').
         campos (list): Lista de campos a recuperar (ej. ['id', 'name', 'email']).
@@ -63,9 +27,9 @@ def extraer_odoo(modelo, campos=None, filtro=None, limite=0):
 
     # Configuración de conexión
     url = "http://odoo:8069"
-    db = "odoo"
-    username = "jmorantllorca@gmail.com"
-    password = "c0719f658ed9a30a79e70e7ddac0dbf8aa01819d"
+    db = ""
+    username = ""
+    password = ""
 
     # Conectar a la API
     common = xmlrpc.client.ServerProxy(f'{url}/xmlrpc/2/common')
