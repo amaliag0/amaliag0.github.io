@@ -68,7 +68,8 @@ L'<b>objectiu</b> d'aquest projecte és que l'alumnat s'introduïsca en el camp 
 ## Resum de recursos de referència
 
 - [The Data Warehouse Toolkit, 3rd Edition](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/books/data-warehouse-dw-toolkit/)
-- [Big Book of Data Warehousing and BI](https://www.databricks.com/sites/default/files/2025-03/OReilly-Understanding-ETL.pdf)
+- [Big Book of Data Warehousing and BI](https://www.databricks.com/sites/default/files/2025-01/big-book-of-data-warehousing-and-bi-v11-010925-final.pdf)
+- [Understanding ETL](https://www.databricks.com/sites/default/files/2025-03/OReilly-Understanding-ETL.pdf)
 - [Canal de YouTube: Postgres Open](https://www.youtube.com/@postgresopen/videos)
 - [PostgreSQL Performance Tuning](https://www.percona.com/resources/elevate-your-postgresql-performance)
 - Documentació oficial de cada tecnologia
