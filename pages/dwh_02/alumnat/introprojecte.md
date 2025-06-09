@@ -42,9 +42,10 @@ Durant la major part d'aquest mòdul, l’alumnat desenvoluparà un **projecte p
 <mark>COMPLETAR</mark>
 
 ## Metodologies
-- Treball en grups (2 o 3 persones)
+- Treball en equip
 - Aprenentatge basat en simulació de cas real
 - Aprenentatge-investigació
+- Pràctica guiada
 
 ## Avaluació
 
