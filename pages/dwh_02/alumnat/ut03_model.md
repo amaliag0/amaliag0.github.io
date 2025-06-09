@@ -1,11 +1,7 @@
 # :sparkles: Unitat de Treball 3. Emmagatzematge i Modelatge de dades
 
-## Objectius de la UT
-<mark> ACTUALITZAR AMB ELEMENTS CURRICULARS</mark>
+> Lectura exhaustiva per ampliar coneixements: ["The Data Warehouse Toolkit, Third Edition"](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/books/data-warehouse-dw-toolkit/) de Kimball i Ross.
 
-> Lectura exhaustiva per ampliar coneixements: *The Data Warehouse Toolkit (Third Edition)* de Kimball i Ross.
-
----
 
 ## 1. Magatzem de dades
 
@@ -112,15 +108,6 @@ Aquest esquema és eficient per a:
 Per contra, no és recomanable quan:
 - Les dimensions canvien a sovint, ja que aquest esquema dificulta el seu manteniment.
 - Es requerix un emmagatzematge eficient, sobretot quan es tracta de grans volums de dades.
-
-> Exemple
-```
-            dim_client
-                |
-dim_temps — fact_vendes — dim_producte
-                |
-            dim_empleat
-```
 
 > Exemple
 ```mermaid
@@ -314,29 +301,31 @@ Per a això, es poden seguir els següents mètodes:
 
 ---
 
-## 5. Bones pràctiques
-<mark>REVISAR</mark>
+## 5. Consideracions i bones pràctiques
 
 ### Normalització vs. desnormalització
-- **Desnormalització**: preferida en magatzems de dades per millorar la velocitat de consulta.
+- **Desnormalització**: preferida per millorar la velocitat de consulta.
 - **Normalització**: útil per a manteniment i integritat, però pot penalitzar el rendiment.
 
 ### Seguretat i control d’accés
-- Definició de rols i permisos.
-- Restricció d’accés a dades sensibles (ex: dades personals de clients).
-
+- Definició i implementació de rols i permisos, seguint els principis definits per l'estratègia de governança de dades de l'entitat.
+- Restricció d’accés a dades sensibles (ex: dades personals).
 
 ### Índexs i optimització
-- Índexs en claus foranes i camps de consulta habitual.
+- Implementació d'índexs en claus foranes i camps de consulta habituals.
 
-> Per recordar els tipus de claus en bases de dades: l'article ["Types of keys"](https://www.bbc.co.uk/bitesize/guides/z4wf8xs/revision/4)
+> Per recordar els tipus de claus, l'article ["Types of keys"](https://www.bbc.co.uk/bitesize/guides/z4wf8xs/revision/4)  
+> Per recordar què és la indexació, l'article ["What is a Database Index?"](https://www.codecademy.com/article/sql-indexes)  
+> Índexació de manera exhaustiva, a ["Indexing in databases"](https://www.geeksforgeeks.org/indexing-in-databases-set-1/)
 
-- Ús de **vistes materialitzades** per millorar el rendiment de consultes agregades.
+### Vistes materialitzades
+- Creació de **vistes materialitzades** per millorar el rendiment de consultes agregades en la fase analítica.
 
-```sql
-CREATE MATERIALIZED VIEW vendes_per_categoria AS
-SELECT p.categoria, SUM(f.import_total)
-FROM fact_vendes f
-JOIN dim_producte p ON f.id_producte = p.id_producte
-GROUP BY p.categoria;
-```
+> Exemple
+>```sql
+>CREATE MATERIALIZED VIEW vendes_per_categoria AS
+>SELECT p.categoria, SUM(f.import_total)
+>FROM fact_vendes f
+>JOIN dim_producte p ON f.id_producte = p.id_producte
+>GROUP BY p.categoria;
+>```

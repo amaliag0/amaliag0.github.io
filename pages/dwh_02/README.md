@@ -1,7 +1,7 @@
 
 > **Enllaços útils**  
-> &#8594; [Recursos professorat](./professorat/index.html)  
-> &#8594; [Recursos alumnat](./alumnat/index.html)  
+> &#8594; [Recursos professorat](./professorat)  
+> &#8594; [Recursos alumnat](./alumnat)  
 > &#8594; [Recursos avaluació](./alumnat/avaluacio)  
 
 ## Introducció  

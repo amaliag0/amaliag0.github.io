@@ -1,12 +1,5 @@
 # :sparkles: Unitat de Treball 2. Transformació de dades
 
-## Objectius de la UT
-<mark> ACTUALITZAR AMB ELEMENTS CURRICULARS</mark>
-- Comprendre la importància de la transformació de dades dins del procés ETL.
-- Aplicar tècniques de neteja, normalització i enriquiment de dades.
-- Conèixer els principis de la gestió de dades i la governança de dades.
-- Garantir la qualitat i la protecció de les dades durant la transformació.
-
 ## 1. ETL: Extracció, Transformació i Càrrega (continuació)
 
 Continuant amb el procés ETL, el següent pas una vegada realitzada l'extracció de dades és la transformació.
@@ -82,7 +75,7 @@ No obstant això, és necessari conéixer l'origen de les dades, ja que poden se
 
 D'altra banda, no només les dades personals són considerades sensibles, sinó que, en funció de l'activitat duta a terme per l'organització per a la qual s'implementa el projecte, altres dades poden necessitar d'una protecció específica també. Per tant, durant el desenvolupament del projecte d'aprofitament de dades, **és necessari coordinar-se amb els departaments legals i de governança de dades de l'entitat**, així com amb les persones responsables de les dades en qüestió, per tal d'assegurar la legalitat i la correcció en els procediments.
 
-### 3.2. Accions de protecció
+### 3. 2. Accions de protecció
 
 1. Anonimització
 

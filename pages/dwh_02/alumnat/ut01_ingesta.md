@@ -89,7 +89,18 @@ Els processos ETL poden implementar-se amb eines diverses, però es recomana que
     - Permeten monitoritzar el funcionament del procés.
     - Gestionen errors i definixen accions automàtiques quan es produïxen.
 
-<mark> EXEMPLES </mark>
+Algunes eines populars en l'actualitat...
+- Eines de codi obert
+    - Apache NiFi
+    - Talend Open Studio
+    - Pentaho Data Integration
+    - Apache Spark
+- Eines comercials
+    - Informatica Data Integration
+    - Microsoft SQL Server Integration Services (SSIS)
+    - Oracle Data Integrator
+    - Google Cloud Dataflow
+    - Azure Data Factory
 
 ### *Batch* vs *Streaming*   
 
