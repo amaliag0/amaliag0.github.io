@@ -33,11 +33,32 @@ Per exemple, per a...
 ---
 
 ## 2. Cicle de vida de les dades
-Data lifecycle
 
-https://aitor-medrano.github.io/iabd/de/de.html#ciclo-de-vida
+El cicle de vida de les dades (_data lifecycle_) és el conjunt de fases que seguixen les dades des del moment en què es generen o s’adquirixen fins que es descarten o s’arxiven. Aquest concepte és fonamental en la gestió de dades, ja que ajuda a garantir-ne la qualitat, la seguretat, la legalitat dels processos implicats i l’aprofitament eficient al llarg del temps.  
 
-https://aitor-medrano.github.io/iabd/de/de.html#ingesta
+Tot i que pot variar lleugerament segons el context, el cicle de vida de les dades generalment inclou les següents etapes:
+
+1. Creació o adquisició  
+Les dades es generen (ex: sensors, formularis, transaccions) o s’obtenen d’altres fonts (ex: APIs, bases de dades externes).  
+És clau assegurar la qualitat i la integritat des del primer moment.
+2. Emmagatzematge  
+Les dades es guarden en sistemes adequats (bases de dades, llacs de dades, magatzems de dades).  
+Cal garantir la seguretat, la disponibilitat i el compliment normatiu (ex: RGPD).
+3. Processament  
+Es netegen, transformen i estructuren per fer-les útils.  
+Inclou operacions com: normalització, integració, deduplicació, etc.
+4. Anàlisi i ús  
+Les dades es consulten i s’analitzen per extraure'n coneixement.  
+Pot incloure: informes, _dashboards_, models predictius, etc.
+5. Compartició  
+Les dades o els resultats de l’anàlisi es distribuïxen a usuaris o sistemes.  
+És important controlar-ne l’accés i garantir-ne la traçabilitat.
+6. Arxivament o eliminació  
+Quan les dades ja no són útils, es poden:  
+    - Arxivar per a ús futur o per obligacions legals.  
+    - Eliminar de manera segura per evitar riscos de privacitat o seguretat.
+
+![](./alumnat/data-lifecycle2.png)  
 
 ---
 
@@ -52,8 +73,6 @@ Un sistema d'aprofitament de dades complet inclou els següents blocs:
 5. **Visualització**: Quadres de comandament (_dashboards_), informes d'intel·ligència de negoci (BI) i alertes que permeten visualitzar, interpretar i monitoritzar les dades i els indicadors definits. <mark>_Aquestes destreses es treballaran en la Unitat de Treball 5_</mark>.
 
 Aquestes fases es connecten entre si formant un **flux de dades** que va des de les fonts fins a la presa de decisions, una vegada s'han interpretat les dades. Tots aquestos conceptes s'estudiaran amb profunditat en les Unitats de Treball referides.  
-
-<mark> REVISAR ESTIL</mark>
 
 ```mermaid
 flowchart LR
@@ -78,59 +97,78 @@ flowchart LR
     
     E --> F["`(6) Visualització de dades`"]
 
-    style A1 fill:#FFD1DC,stroke:#000,stroke-width:1px
-    style A2 fill:#FFD1DC,stroke:#333,stroke-width:1px
-    style A3 fill:#FFD1DC,stroke:#333,stroke-width:1px
-    style B fill:#FFD1DC,stroke:#333,stroke-width:1px
-    style C fill:#DA70D6,stroke:#333,stroke-width:1px
-    style D fill:#F1FAEE,stroke:#333,stroke-width:1px
-    style E fill:#D8F3DC,stroke:#333,stroke-width:1px
-    style F fill:#ffb,stroke:#fff,stroke-width:1px
-
 ```
 
 ---
 ## 4. Sistemes d'emmagatzematge
 
-Data warehouse, Data lake
-https://aitor-medrano.github.io/iabd/de/de.html#almacenamiento
+La taula següent compara els sistemes "magatzem de dades" o **Data Warehouse**, i "llac de dades" o **Data Lake**, destacant les seues diferències principals en diversos aspectes clau:
+
+| **Aspecte**                     | ***Data Warehouse***                                                                 | ***Data Lake***                                                                 |
+|----------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| **Tipus de dades**              | Principalment, dades estructurades (SQL, taules relacionals)                                     | Dades estructurades, semiestructurades i no estructurades (JSON, imatges, logs, etc.) |
+| **Modelatge**                   | Modelatge previ (esquemes definits: _star_, _snowflake_)                         | Sense modelatge previ (esquema en lectura: *schema-on-read*)                  |
+| **Finalitat principal**         | Anàlisi empresarial, informes, BI                                                 | Emmagatzematge massiu, ciència de dades, altres aplicacions d'IA                    |
+| **Temps de preparació de dades**| Alt (ETL: extracció, transformació i càrrega abans de l’ús)                       | Baix (ELT: les dades es carreguen i es processen quan cal)                    |
+| **Rendiment de consultes**      | Alt per a consultes estructurades i agregacions, depenent de l'esquema                                   | Variable; depén del format i volum de dades                                   |
+| **Cost d’emmagatzematge**      | Més elevat (optimitzat per a rendiment), però depén de l'esquema                                           | Més econòmic (emmagatzematge massiu en brut)                                  |
+| **Tecnologies habituals**       | PostgreSQL, Snowflake, Amazon Redshift, Google BigQuery                          | Hadoop, Amazon S3, Azure Data Lake, Apache Spark                              |
+| **Governança i qualitat**       | Alta governança i control de qualitat                                             | Potencialment menys controlat si no es gestiona bé                            |
+| **Usuaris principals**          | Analistes de dades, responsables de negoci, aplicacions d'IA                                        | Científics de dades                                       |
+
 
 ---
 
 ## 5. Gestió de dades i Governança de dades
-https://aitor-medrano.github.io/iabd/de/de.html#areas-transversales
+
+La **gestió de dades i la governança de dades són dos conceptes fonamentals en qualsevol projecte d’aprofitament de dades**, especialment quan es treballa amb grans volums d’informació.  
+
+La **gestió de dades** fa referència al conjunt de processos, eines i pràctiques utilitzades per recollir, emmagatzemar, organitzar, protegir i mantindre les dades al llarg del seu cicle de vida, amb l'objectiu de **garantir que les dades estiguen disponibles, siguen fiables i útils per a l’organització**.  
+
+Inclou:
+- Integració i qualitat de dades
+- Emmagatzematge i accés eficient
+- Seguretat i còpies de seguretat
+- Preparació per a l’anàlisi
+
+D'altra banda, la **governança de dades** engloba el marc de normes, rols, polítiques i responsabilitats que asseguren que les dades siguen gestionades de manera coherent, segura i alineada amb els objectius de l'entitat; és a dir, va un pas més enllà de la gestió de dades per garantir que el seu ús siga ètic i regulat.  
+
+Inclou:
+- Definició de rols (ex: propietari de dades, administrador de sistema que gestiona dades)
+- Normatives d’ús i accés
+- Compliment legal (ex: RGPD)
+- Qualitat i traçabilitat de les dades
+
+Sense una bona gestió i governança:
+
+- Les dades poden ser incompletes, duplicades o incorrectes.
+- Es poden produir errors en l’anàlisi i la presa de decisions.
+- Es poden incomplir normatives legals, amb conseqüències greus.
+- Es dificulta la confiança en els resultats i la col·laboració entre equips.
+
+Amb una gestió i governança sòlides:
+
+- Es maximitza el valor estratègic de les dades.
+- Es millora la qualitat de les decisions.
+- Es reduïxen riscos i costos operatius.
+
+> Per ampliar coneixements sobre la gestió de dades i la seua importància: la guia ["A Comprehensive Guide
+to Data and AI Governance"](https://www.databricks.com/sites/default/files/2024-08/comprehensive-guide-to-data-and-ai-governance.pdf).
 
 ---
-## 6. Rols associats al món professional 
+## 6. Rols i àmbits associats al món professional 
 
-<mark>Intro + relació amb projecte</mark>
-
-#### Arquitectura de dades
-
-#### Enginyeria de dades
-
-#### Anàlisi de dades
-
-#### Ciència de dades
-
-#### Intel·ligència de Negoci (BI)
-
-#### Gestió de Dades i Governança de Dades
-## 🧠 3. Data Management: gestió eficient del cicle de vida del dada
-
-La **gestió de dades** implica controlar tot el cicle de vida del dada: des de la seua creació fins a la seua eliminació.
-
-### Bones pràctiques:
-
-- Documentar l’origen i les transformacions aplicades (metadades).
-- Controlar versions dels conjunts de dades.
-- Establir polítiques de retenció i arxiu.
-- Automatitzar processos de validació i control de qualitat.
-
-> 📁 Exemple: mantenir un registre de quan i com s’ha modificat un camp de “categoria de producte”.
-
-#### Altres
-DPO
+- Arquitectura de dades
+- Enginyeria de dades
+- Administració de sistemes
+- Anàlisi de dades
+- Ciència de dades
+- Enginyeria de la Intel·ligència de Negoci (BI)
+- Gestió de Dades i Governança de Dades
+- Responsable de producte
+- Altres
+    - _Data Protection Officer_
+    - _Chief Data Officer_
 
 ---
-https://aitor-medrano.github.io/iabd/de/de.html#herramientas-base
+
