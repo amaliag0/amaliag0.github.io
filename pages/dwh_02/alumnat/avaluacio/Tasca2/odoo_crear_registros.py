@@ -4,10 +4,10 @@ import xmlrpc.client
 from passlib.context import CryptContext
 
 # === CONFIGURACIÓN DE CONEXIÓN A ODOO ===
-url = "http://odoo:8069"
-db = "odoo"
-username = "jmorantllorca@gmail.com"
-password = "almoines"  # asegúrate de que es correcta
+url = ""
+db = ""
+username = ""
+password = ""  # asegúrate de que es correcta
 
 # === ENCRIPTACIÓN DE CONTRASEÑAS ===
 pwd_context = CryptContext(schemes=["pbkdf2_sha512"])
