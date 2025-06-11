@@ -5,15 +5,7 @@ description: "Unitat de Treball"
 
 # <span style="color: darkslateblue;">Disseny d'un magatzem de dades (DWH) </span>  
 
-[Tornar a l'inici](../../../index.html)
-
-<style scoped> 
-    table {
-    margin: auto;
-    width: 100%;
-    tr:nth-child(even) {background-color: darkslateblue;}
-    }
-</style>
+[Tornar a l'inici](../../../index.html)   
 
 <table>
     <tr>
