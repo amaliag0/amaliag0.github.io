@@ -15,6 +15,6 @@ Mòdul de "Sistemes de Big Data (5074)" dins el "Curs d'especialització en Inte
 &#8594; [Descripció](../fp-ia-bigdata.html)  
 
 #### Avaluació
-- (propi) [Rúbrica del format del diagrama](./avaluacio/rubrica_model.pdf)
-- (propi) [Rúbrica del producte final](./avaluacio/rubrica_productefinal.pdf)
-- (propi) [Rúbrica de la presentació](./avaluacio/rubrica_presentacio.pdf)
+- (propi) [Rúbrica del format del diagrama](./rubrica_model.pdf)
+- (propi) [Rúbrica del producte final](./rubrica_productefinal.pdf)
+- (propi) [Rúbrica de la presentació](./rubrica_presentacio.pdf)
