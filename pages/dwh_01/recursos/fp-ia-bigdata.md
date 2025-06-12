@@ -3,8 +3,6 @@ title: "Disseny d'un magatzem de dades (DWH)"
 description: "Unitat de Treball"
 ---
 
-# <span style="color: darkslateblue;">Disseny d'un magatzem de dades (DWH) </span>  
-
 [Tornar a l'inici](../../../index.html)   
 
 <table>
@@ -34,7 +32,7 @@ description: "Unitat de Treball"
     </tr>
 </table>
 
-## :dart: 🎯 Antecedents i Objectius
+## 🎯 Antecedents i Objectius
 La gestió correcta i eficient de sistemes d'informació digital i de les dades que contenen és un procediment fonamental en qualsevol àmbit en l'actualitat. Una aplicació habitual n'és la integració estructurada de dades de diferents fonts d'informació en un únic sistema, amb un ús o fi concret. <br> L'<b>objectiu</b> d'aquest projecte és que l'alumnat s'introduïsca en aquest camp des de la perspectiva d'un/a arquitecte/a de dades, dissenyant un magatzem de dades (DWH) que després implementarà de manera pràctica en una altra fase del projecte. Amb açò es pretén que l'alumnat:
 <li>aprenga a entendre les necessitats d'una entitat/client respecte a l'ús de les dades que genera la seua activitat</li>
 <li>guanye habilitats per entendre la realitat tecnològica i estructural dels sistemes d'informació de l'entitat/client i les relacions i fluxes entre ells</li>
@@ -45,12 +43,12 @@ La gestió correcta i eficient de sistemes d'informació digital i de les dades 
 
 ---
 
-## :thought_balloon: Repte
+## 💭 Repte
 L'entitat per a la qual treballeu vol fer ús de dades que es generen en diferents aplicacions, per analitzar-les de manera conjunta i crear taulers de control amb mètriques i gràfics. Sou els/les arquitectes de dades de l'entitat i heu de dissenyar el DWH que integrarà les dades. En primer lloc, haureu de rebre instruccions del gestor de l'equip (professorat) sobre l'objectiu de l'entitat/client, i arran d'això, haureu d'investigar quines fonts d'informació hi ha, quines dades s'hi generen, quines tecnologies s'usen, i decidir quina és la millor solució tècnica per al problema plantejat.  
 
 ---
 
-## :white_check_mark: Producte  
+## ✅ Producte  
 
 Disseny documentat del DWH en un fitxer (PDF o altre format adient), incloent:
 <li>les tecnologies emprades en el DWH </li>
@@ -62,7 +60,7 @@ Disseny documentat del DWH en un fitxer (PDF o altre format adient), incloent:
 
 ---
 
-## :hammer: Metodologia  
+## 🔨 Metodologia  
 
 La dinàmica general del projecte consistirà a realitzar revisions teòriques de conceptes i tecnologies per, tot seguit, aplicar l'explicació al projecte de desenvolupament pràctic.  
 
@@ -75,7 +73,7 @@ S'utilitzaran les següents metodologies de treball:
 
 ---
 
-## :books: Elements curriculars  
+## 📚 Elements curriculars  
 ### Continguts
 Sistemes de gestió de emmagatzematge de dades.  
 Ferramentes d'importació, integració i transformació de dades.  
@@ -164,7 +162,7 @@ Documentació tècnica.
 
 ---
 
-## :bookmark_tabs: Recursos  
+## 📑 Recursos  
 
 - (propi) Teoria completa: [Unitat de Treball. Emmagatzematge i Modelatge de dades](./ut03_model.md)
 - (propi) Presentació per a l'aula: [Eines per crear diagrames de bases de dades](./presentacio_eines.pdf)
@@ -186,7 +184,7 @@ Documentació tècnica.
 
 ---
 
-## :bar_chart: Seqüenciació i Avaluació
+## 📊 Seqüenciació i Avaluació
 
 5 sessions d'una classe a la setmana (de 3 hores).  
 
@@ -287,7 +285,7 @@ Documentació tècnica.
 
 ---
 
-## Atenció a la diversitat
+## 👥 Atenció a la diversitat
 
 Tot el material s'ha preparat atenent a la possibilitat de la necessitat de realitzar aquestes dues adaptacions:
 - Idioma: el contingut està disponible en un format senzill compatible amb els principals navegadors, que aporten les eines necessàries per a la seua adaptació lingüística.
