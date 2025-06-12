@@ -7,7 +7,9 @@
 2. Modelatge Dimensional
 3. Esquemes de dades
 4. Tècniques de Modelatge Dimensional
-5. Consideracions i bones pràctiques
+5. Consideracions i bones pràctiques  
+
+[Tornar a la pàgina anterior](./index.html)  
 
 ---
 
@@ -119,16 +121,7 @@ Per contra, no és recomanable quan:
 
 > Exemple  
 
-```mermaid
-graph TD
-    A["`dim_client`"]
-    A --- B["`fact_vendes`"]
-    B --- C["`dim_empleat`"]
-    D["`dim_temps`"]
-    D --- B
-    E["`dim_producte`"]
-    B --- E
-```
+![center](./schema-star.png)
 
 ### "Esquema cop de neu" (_snowflake schema_)
 
@@ -149,21 +142,7 @@ Per contra, no és recomanable quan:
 
 > Exemple: `dim_producte` → `dim_subcategoria` → `dim_categoria`  
 
-```mermaid
-graph TD
-    A["`dim_client`"]
-    A --- B["`fact_vendes`"]
-    B --- C["`dim_empleat`"]
-    D["`dim_temps`"]
-    D --- B
-    E["`dim_producte`"]
-    B --- E
-    E --- F["`dim_subcategoria`"]
-    F --- G["`dim_categoria`"]
-    C --- H["`dim_departament`"]
-    A --- I["`dim_regio`"]
-    I --- J["`dim_pais`"]
-```
+![center](./schema-snowflake.png)
 
 ### Comparativa entre els esquemes _star_ i _snowflake_
 
