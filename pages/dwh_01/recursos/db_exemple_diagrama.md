@@ -103,4 +103,3 @@ erDiagram
     DIM_PRODUCTE ||--o{ METRIQUES_COMPLEXES : producte_id
     DIM_CLIENT ||--o{ METRIQUES_COMPLEXES : client_id
     DIM_TEMPS ||--o{ METRIQUES_COMPLEXES : temps_id
-    ```
