@@ -34,7 +34,7 @@ description: "Unitat de Treball"
     </tr>
 </table>
 
-## :dart: Antecedents i Objectius
+## :dart: 🎯 Antecedents i Objectius
 La gestió correcta i eficient de sistemes d'informació digital i de les dades que contenen és un procediment fonamental en qualsevol àmbit en l'actualitat. Una aplicació habitual n'és la integració estructurada de dades de diferents fonts d'informació en un únic sistema, amb un ús o fi concret. <br> L'<b>objectiu</b> d'aquest projecte és que l'alumnat s'introduïsca en aquest camp des de la perspectiva d'un/a arquitecte/a de dades, dissenyant un magatzem de dades (DWH) que després implementarà de manera pràctica en una altra fase del projecte. Amb açò es pretén que l'alumnat:
 <li>aprenga a entendre les necessitats d'una entitat/client respecte a l'ús de les dades que genera la seua activitat</li>
 <li>guanye habilitats per entendre la realitat tecnològica i estructural dels sistemes d'informació de l'entitat/client i les relacions i fluxes entre ells</li>
