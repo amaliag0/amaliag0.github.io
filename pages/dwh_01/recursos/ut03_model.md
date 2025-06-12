@@ -1,4 +1,4 @@
-# :sparkles: Unitat de Treball. Emmagatzematge i Modelatge de dades
+# ✨ Unitat de Treball. Emmagatzematge i Modelatge de dades
 
 > Lectura exhaustiva per ampliar coneixements: ["The Data Warehouse Toolkit, Third Edition"](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/books/data-warehouse-dw-toolkit/) de Kimball i Ross.
 
@@ -55,13 +55,13 @@ Existixen diferents tipus de taules de fets:
 
 <br>
 
-> Exemple:
-> Taula transaccional `fact_vendes`
-> | id_venda | id_producte | id_client | id_temps | quantitat | import_total |
-> |----------|-------------|-----------|----------|-----------|---------------|
-> | 1        | 101         | 2001      | 20250101 | 3         | 45.00         |
-> | 2        | 101         | 2002      | 20250101 | 4         | 60.00         |
-> | 15       | 101         | 2001      | 20250122 | 1         | 15.00         |
+> Exemple: Taula transaccional `fact_vendes`  
+
+| id_venda | id_producte | id_client | id_temps | quantitat | import_total |
+|----------|-------------|-----------|----------|-----------|---------------|
+| 1        | 101         | 2001      | 20250101 | 3         | 45.00         |
+| 2        | 101         | 2002      | 20250101 | 4         | 60.00         |
+| 15       | 101         | 2001      | 20250122 | 1         | 15.00         |
 
 ### Taules de dimensions (_DIMENSION_)
 Les taules de dimensions són taules descriptives que **proporcionen context descriptiu** a les dades emmagatzemades en les taules de fets. Són essencials per a la comprensió i l’anàlisi de les dades, ja que permeten filtrar, agrupar i explorar les mesures des de diferents perspectives. Contenen tots els atributs i jerarquies.  
@@ -74,12 +74,12 @@ Característiques principals:
 
 Algunes de les dimensions més habituals són `temps`, `usuari`, `producte`, `ubicació`.
 
-> Exemple:
-> Taula `dim_producte`
-> | id_producte | nom_producte    | categoria | preu_kg_euro  |
-> |-------------|-----------------|-----------|---------------|
-> | 101         | Pastís de llima | Pastís    | 7.5           |
-> | 102         | Pa de quarta    | Pa        | 3.0           |
+> Exemple: Taula `dim_producte`  
+
+| id_producte | nom_producte    | categoria | preu_kg_euro  |
+|-------------|-----------------|-----------|---------------|
+| 101         | Pastís de llima | Pastís    | 7.5           |
+| 102         | Pa de quarta    | Pa        | 3.0           |
 
 ---
 
@@ -117,7 +117,8 @@ Per contra, no és recomanable quan:
 - Les dimensions canvien a sovint, ja que aquest esquema dificulta el seu manteniment.
 - Es requerix un emmagatzematge eficient, sobretot quan es tracta de grans volums de dades.
 
-> Exemple
+> Exemple  
+
 ```mermaid
 graph TD
     A["`dim_client`"]
@@ -146,8 +147,8 @@ Per contra, no és recomanable quan:
 - S'usa en conjunt amb eines de visualització o BI que requerisquen de temps de resposta quasi immediats. 
 - Es requeix rapidesa de lectura per a anàlisis complexes, ja que calen més unions entre taules i les consultes són més lentes i complexes.
 
-**Exemple:**
-`dim_producte` → `dim_subcategoria` → `dim_categoria`
+> Exemple: `dim_producte` → `dim_subcategoria` → `dim_categoria`  
+
 ```mermaid
 graph TD
     A["`dim_client`"]
@@ -188,12 +189,12 @@ El modelatge dimensional segons Kimball seguix una metodologia estructurada per 
 #### Pas 1. Identificació del procés de negoci  
 Seleccionar un procés mesurable i rellevant que es puga analitzar mitjançant dades. És recomanable triar processos que siguen freqüents i repetitius, i prioritzar processos estratègics per a l’organització.  
 
-Exemples: vendes, comandes, trucades de suport.
+> Exemples: vendes, comandes, trucades de suport.
 
 #### Pas 2: Definició del granulat
 Determinar el **nivell de detall** de cada fila de les taules de fets, que determinarà quines mesures es podran calcular i en funció de quines dimensions. És recomanable que el granulat siga consistent amb les dimensions disponibles.   
 
-Exemples: una fila per cada línia de comanda o una fila per cada dia i producte.
+> Exemples: una fila per cada línia de comanda o una fila per cada dia i producte.
 
 #### Pas 3: Identificació de dimensions
 Determinar les taules que proporcionaran context als fets, i els atributs i jerarquies que les conformaran. Les dimensions són essencials per a la navegació analítica en la visualització de dades i BI (_drill-down_, _breakdown_), ja que permeten:
@@ -208,19 +209,19 @@ Determinar les taules que proporcionaran context als fets, i els atributs i jera
 - Evitar atributs amb valors nuls o amb significat ambigu.
 - Documentar les jerarquies (ex: categoria &rarr; subcategoria &rarr; producte).
 
-Exemples: 
-- `Temps` (`dia`, `mes`, `any`)
-- `Client` (`id_client`, `nom`, `DNI`, `email`, `codi_postal`)
-- `Producte` (`id_producte`, `nom`, `categoria`, `preu`)
-- `Tenda` (`id_tenda`, `nom`, `codi_postal`)
+> Exemples:   
+> - `Temps` (`dia`, `mes`, `any`)
+> - `Client` (`id_client`, `nom`, `DNI`, `email`, `codi_postal`)
+> - `Producte` (`id_producte`, `nom`, `categoria`, `preu`)
+> - `Tenda` (`id_tenda`, `nom`, `codi_postal`)
 
 #### Pas 4: Definició de mesures
 Seleccionar mesures **aditives** (es poden sumar), **semiaditives** (es poden sumar parcialment) o **no additives**. És recomanable incloure mesures netes i derivades (ex: import_total = quantitat × preu_unitari), evitar mesures amb significat ambigu i documentar clarament el significat de cada mesura.
 
-**Exemples:**
-- Additiva: `quantitat`, `import_total`
-- Semiaditiva: `saldo` (només té sentit sumar-lo per períodes iguals)
-- No additiva: `percentatge`, `mitjana`
+> Exemples:
+> - Additiva: `quantitat`, `import_total`
+> - Semiaditiva: `saldo` (només té sentit sumar-lo per períodes iguals)
+> - No additiva: `percentatge`, `mitjana`
 
 #### Pas 5. Disseny de les taules de fets
 Tenint en compte:
@@ -228,18 +229,18 @@ Tenint en compte:
 - Mesures numèriques (`quantitat`, `ìmport_total`).
 - Claus substitutives (_surrogate keys_) per identificar de manera única les files (registres), si cal (`id`).
 
-Exemple:
-```sql
-CREATE TABLE fact_vendes (
-  id SERIAL PRIMARY KEY,
-  id_producte INT,
-  id_client INT,
-  id_temps DATE,
-  id_botiga INT,
-  quantitat INT,
-  import_total NUMERIC
-);
-```
+> Exemple:  
+> ```sql
+> CREATE TABLE fact_vendes (
+>   id SERIAL PRIMARY KEY,
+>   id_producte INT,
+>   id_client INT,
+>   id_temps DATE,
+>   id_botiga INT,
+>   quantitat INT,
+>   import_total NUMERIC
+> );
+> ```
 
 #### Pas 6. Tractament de dades temporals i canvis en dimensions
 En un magatzem de dades, les dimensions (com client, producte, empleat, etc.) poden canviar amb el temps. Per exemple:
@@ -260,13 +261,12 @@ Consideracions:
 - No es conserva l’històric.
 - Útil quan els canvis no afecten l’anàlisi històrica.  
 
-Exemple: Un client canvia el seu número de telèfon. No cal conservar l’antic.
-
-```sql
-UPDATE dim_client
-SET telefon = '612345678'
-WHERE id_client = 101;
-```
+> Exemple: Un client canvia el seu número de telèfon. No cal conservar l’antic.  
+> ```sql
+> UPDATE dim_client
+> SET telefon = '612345678'
+> WHERE id_client = 101;
+> ```
 
 ##### SCD Tipus 2 – Històric complet
 - Es crea una nova fila amb el nou valor.
@@ -274,27 +274,26 @@ WHERE id_client = 101;
 - S’afegixen camps com `data_inici`, `data_fi`, `actiu`.  
 - Permet anàlisi històrica precisa.  
 
-Exemple: Un client canvia de ciutat. Es vol saber on vivia en cada moment.
+> Exemple: Un client canvia de ciutat, però es vol saber on vivia en cada moment.  
+> ```sql
+> -- Fila antiga
+> id_client | nom     | ciutat     | data_inici | data_fi     | actiu
+> 101       | Maria   | València   | 2022-01-01 | 2024-03-15  | FALSE
+> 
+> -- Nova fila
+> 102       | Maria   | Alacant    | 2024-03-16 | NULL        | TRUE
+> ```  
 
-```sql
--- Fila antiga
-id_client | nom     | ciutat     | data_inici | data_fi     | actiu
-101       | Maria   | València   | 2022-01-01 | 2024-03-15  | FALSE
-
--- Nova fila
-102       | Maria   | Alacant    | 2024-03-16 | NULL        | TRUE
-```
 ##### SCD Tipus 3 – Valor anterior
 - Es guarda el valor actual i l’anterior en la mateixa fila.
 - No es conserva tot l’històric, només l’últim canvi.
 - Només permet fer el seguiment d'un canvi.  
 
-Exemple: Un client canvia de ciutat, però només cal guardar una adreça anterior.
-
-```sql
-id_client | nom   | ciutat_actual | ciutat_anterior
-101       | Maria | Alacant       | València
-```
+> Exemple: Un client canvia de ciutat, però només cal guardar una adreça anterior.  
+> ```sql
+> id_client | nom   | ciutat_actual | ciutat_anterior
+> 101       | Maria | Alacant       | València
+> ```
 
 #### Pas 7. Validació i iteració
 Amb l'objectiu de comprovar que el model:
@@ -330,10 +329,10 @@ Per a això, es poden seguir els següents mètodes:
 - Creació de **vistes materialitzades** per millorar el rendiment de consultes agregades en la fase analítica.
 
 > Exemple
->```sql
->CREATE MATERIALIZED VIEW vendes_per_categoria AS
->SELECT p.categoria, SUM(f.import_total)
->FROM fact_vendes f
->JOIN dim_producte p ON f.id_producte = p.id_producte
->GROUP BY p.categoria;
->```
+> ```sql
+> CREATE MATERIALIZED VIEW vendes_per_categoria AS
+> SELECT p.categoria, SUM(f.import_total)
+> FROM fact_vendes f
+> JOIN dim_producte p ON f.id_producte = p.id_producte
+> GROUP BY p.categoria;
+> ```
